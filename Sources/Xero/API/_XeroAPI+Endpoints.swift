@@ -7,7 +7,6 @@
 
 import Foundation
 import Presto
-@_exported import Models
 
 internal extension Xero {
     
