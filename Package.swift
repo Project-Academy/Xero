@@ -13,24 +13,17 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-//        .library(
-//            name: "XeroModels",
-//            targets: ["Models"]),
         .library(
             name: "Xero",
-            targets: ["Models", "API"]),
+            targets: ["Xero"]),
     ],
     dependencies: [.Presto, .PKAppInfo, .PKPrefs],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Models",
+            name: "Xero",
             dependencies: [.Presto, .PKAppInfo, .PKPrefs]),
-        .target(
-            name: "API",
-            dependencies: [.Presto, .PKAppInfo, .PKPrefs, .target(name: "Models")]),
-
     ]
 )
 //--------------------------------------
