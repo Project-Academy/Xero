@@ -11,14 +11,14 @@ extension Xero {
     public typealias EarningsLines = Array<EarningsLine>
     public struct EarningsLine: Codable {
         /// Xero identifier for payroll earnings rate.
-        var EarningsRateID:     String?
+        public var EarningsRateID:     String?
         /// Rate per unit for earnings rate.
-        var RatePerUnit:        Decimal?
+        public var RatePerUnit:        Decimal?
         /// Earnings rate number of units.
-        var NumberOfUnits:      Decimal?
+        public var NumberOfUnits:      Decimal?
         /// Earnings rate amount.
         /// Only applicable if the EarningsRate RateType is Fixed
-        var FixedAmount:        Decimal?
+        public var FixedAmount:        Decimal?
         /// The Tax Year in which a Lump Sum E Earnings Line was accrued.
         /// Only applicable if the EarningsRate EarningsType is LUMPSUME
         var LumpSumETaxYear:    Double?
@@ -26,16 +26,16 @@ extension Xero {
         //--------------------------------------
         // MARK: - COMPUTED -
         //--------------------------------------
-        var earningsRate: EarningsRate? {
+        public var earningsRate: EarningsRate? {
             guard let EarningsRateID else { return nil }
             return Xero.EarningsRate.Map[EarningsRateID]
         }
-        var Name: String? { earningsRate?.Name }
+        public var Name: String? { earningsRate?.Name }
         
         //--------------------------------------
         // MARK: - ONLY IN PAYTEMPLATE? -
         //--------------------------------------
-        var CalculationType: EarningsRateCalculationType?
+        public var CalculationType: EarningsRateCalculationType?
         /// Hours per week for the EarningsLine.
         /// Applicable for ANNUALSALARY CalculationType
         var NumberOfUnitsPerWeek: Double?
@@ -56,7 +56,7 @@ extension Xero.EarningsLine {
         case ANNUALSALARY
     }
 }
-extension Xero.EarningsLine {
+public extension Xero.EarningsLine {
     static func Teaching(_ rate: Decimal) -> Xero.EarningsLine {
         guard let eRate = Xero.EarningsRate.NameMap["Teaching"]?.EarningsRateID
         else { fatalError() }

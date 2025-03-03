@@ -26,21 +26,21 @@ extension Xero {
         public var IsExemptFromSuper:  Bool?
         /// Boolean to determine if the earnings rate is reportable or exempt from W1
         public var IsReportableAsW1:   Bool?
-        var EarningsType:       EarningsType?
+        public var EarningsType:       EarningsType?
         
-        var RateType:           RateType?
+        public var RateType:           RateType?
         /// Default rate per unit (optional).
         /// Only applicable if RateType is RATEPERUNIT.
-        var RatePerUnit:        Double?
+        public var RatePerUnit:        Double?
         /// This is the multiplier used to calculate the rate per unit, based on the employee’s ordinary earnings rate.
         /// For example, for time and a half enter 1.5.
         /// Only applicable if RateType is MULTIPLE
-        var Multiplier:         Double?
+        public var Multiplier:         Double?
         /// Indicates that this earnings rate should accrue leave.
         /// Only applicable if RateType is MULTIPLE
         var AccrueLeave:        Bool?
         /// Optional Amount for FIXEDAMOUNT RateType EarningsRate
-        var Amount:             Double?
+        public var Amount:             Double?
         /// Indicates whether an earning type is active
         public var CurrentRecord:      Bool?
         
@@ -75,7 +75,7 @@ extension Xero {
     }
 }
 extension Xero.EarningsRate {
-    enum EarningsType: String, Codable {
+    public enum EarningsType: String, Codable {
         case ORDINARYTIMEEARNINGS
         case OVERTIMEEARNINGS
         /// EarningsRates with EarningsType ALLOWANCE also require an ALLOWANCETYPE value.
@@ -111,7 +111,7 @@ extension Xero.EarningsRate {
 }
 
 extension Xero.EarningsRate {
-    enum RateType: String, Codable {
+    public enum RateType: String, Codable {
         case FIXEDAMOUNT
         /// Multiple of Employee’s Ordinary Earnings Rate: an earnings rate which is derived from an employee’s ordinary earnings rate
         case MULTIPLE

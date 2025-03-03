@@ -14,17 +14,17 @@ extension Xero {
         // MARK: - VARIABLES -
         //--------------------------------------
         /// Unique Identifiter for this Payslip
-        var PayslipID:              String?
+        public var PayslipID:              String?
         /// Unique Identifier for the Employee
-        var EmployeeID:             String?
-        var FirstName:              String?
-        var LastName:               String?
-        var EmployeeGroup:          String?
+        public var EmployeeID:             String?
+        public var FirstName:              String?
+        public var LastName:               String?
+        public var EmployeeGroup:          String?
         
         //--------------------------------------
         // MARK: - LINE ITEMS -
         //--------------------------------------
-        var EarningsLines:          EarningsLines?
+        public var EarningsLines:          EarningsLines?
         
 //        var TimesheetEarningsLines: Array<TimesheetEarningsLine>?
 //        var DeductionLines:         Array<DeductionLine>?
@@ -37,13 +37,13 @@ extension Xero {
         //--------------------------------------
         // MARK: - SUMMARY -
         //--------------------------------------
-        var Wages:                  Double?
-        var Deductions:             Double?
-        var Tax:                    Double?
-        var Super:                  Double?
-        var Reimbursements:         Double?
+        public var Wages:                  Double?
+        public var Deductions:             Double?
+        public var Tax:                    Double?
+        public var Super:                  Double?
+        public var Reimbursements:         Double?
 
-        var NetPay:                 Double?
+        public var NetPay:                 Double?
 
 //        @StringDate
 //        var LastEdited:             Date?

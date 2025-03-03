@@ -20,16 +20,19 @@ extension Xero {
         
         /// The start date of the upcoming pay period.
         /// - note: if a draft payrun exists for this calendar, this value will show the StartDate of what the next non-draft instance would be.
-        @StringDate var StartDate:          Date?
+        @StringDate
+        public var StartDate:          Date?
         /// The date on which employees will be paid for the upcoming pay period.
-        @StringDate var PaymentDate:        Date?
+        @StringDate
+        public var PaymentDate:        Date?
         /// The start date of the first pay period for the calendar.
-        @StringDate var ReferenceDate:      Date?
+        @StringDate
+        public var ReferenceDate:      Date?
         @StringDate var UpdatedDateUTC:     Date?
         
         
-        static let Group1: String = "7c74461d-ba91-4260-9e6a-7654ae94e048"
-        static let Group2: String = "c1a37522-bad9-4e2a-8b88-0d3895ebabad"
+        static public let Group1: String = "7c74461d-ba91-4260-9e6a-7654ae94e048"
+        static public let Group2: String = "c1a37522-bad9-4e2a-8b88-0d3895ebabad"
         
     }
 }

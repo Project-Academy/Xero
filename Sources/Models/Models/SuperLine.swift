@@ -8,8 +8,8 @@
 import Foundation
 
 extension Xero {
-    typealias SuperLines = Array<SuperLine>
-    struct SuperLine: Codable {
+    public typealias SuperLines = Array<SuperLine>
+    public struct SuperLine: Codable {
         /// Xero superannuation fund membership identifier
         public var SuperMembershipID: String?
         public var ContributionType: ContributionType?

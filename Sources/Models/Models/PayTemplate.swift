@@ -9,9 +9,9 @@ import Foundation
 
 extension Xero {
     public struct PayTemplate: Codable {
-        var EarningsLines: EarningsLines?
+        public var EarningsLines: EarningsLines?
 //        var DeductionLines: DeductionLines?
-        var SuperLines: SuperLines?
+        public var SuperLines: SuperLines?
 //        var ReimbursementLines: ReimbursementLines?
 //        var LeaveLines: LeaveLines?
     }

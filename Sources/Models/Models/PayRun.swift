@@ -14,38 +14,38 @@ extension Xero {
         // MARK: - VARIABLES -
         //--------------------------------------
         /// Unique Identifiter for this PayRun
-        var PayRunID:               String?
+        public var PayRunID:               String?
         /// Payroll Calendar for this PayRun
-        var PayrollCalendarID:      String?
+        public var PayrollCalendarID:      String?
         /// PayRun Status. Either "DRAFT", or "POSTED"
-        var PayRunStatus:           Status?
+        public var PayRunStatus:           Status?
         /// Payment Date for the PayRun
         @StringDate
-        var PaymentDate:            Date?
+        public var PaymentDate:            Date?
         /// Period Start Date for the PayRun
         @StringDate
-        var PayRunPeriodStartDate:  Date?
+        public var PayRunPeriodStartDate:  Date?
         /// Period End Date for the PayRun
         @StringDate
-        var PayRunPeriodEndDate:    Date?
+        public var PayRunPeriodEndDate:    Date?
         /// Payslip message for the PayRun
-        var PayslipMessage:         String?
+        public var PayslipMessage:         String?
         
         //--------------------------------------
         // MARK: - TOTALS -
         //--------------------------------------
         /// Total Wages for the PayRun
-        var Wages:                  Double?
+        public var Wages:                  Double?
         /// Total Deductions for the PayRun
-        var Deductions:             Double?
+        public var Deductions:             Double?
         /// Total Tax for the PayRun
-        var Tax:                    Double?
+        public var Tax:                    Double?
         /// Total Super for the PayRun
-        var Super:                  Double?
+        public var Super:                  Double?
         /// Total Reimbursement for the PayRun
-        var Reimbursement:          Double?
+        public var Reimbursement:          Double?
         /// Total NetPay for the PayRun
-        var NetPay:                 Double?
+        public var NetPay:                 Double?
         
         /// Array of Payslips included in this PayRun.
         /// - note: this field is ONLY populated when fetching a specific PayRun.
@@ -61,7 +61,7 @@ extension Xero {
 // MARK: - CALENDAR TYPE -
 //--------------------------------------
 extension Xero.PayRun {
-    enum Status: String, Codable {
+    public enum Status: String, Codable {
         case DRAFT, POSTED
     }
 }

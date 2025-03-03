@@ -9,21 +9,6 @@ import Foundation
 
 extension Xero.Employee {
     public struct TaxDeclaration: Codable {
-//        public init(EmployeeID: String? = nil, EmploymentBasis: Xero.Employee.TaxDeclaration.EmploymentBasis? = nil, TaxFileNumber: String? = nil, TaxFreeThresholdClaimed: Bool? = nil, HasLoanOrStudentDebt: Bool? = nil, UpdatedDateUTC: Date? = nil, TFNExemptionType: Xero.Employee.TaxDeclaration.TFNExemptionType? = nil, ResidencyStatus: Xero.Employee.TaxDeclaration.ResidencyStatus? = nil, AustralianResidentForTaxPurposes: Bool? = nil, EligibleToReceiveLeaveLoading: Bool? = nil, TaxOffsetEstimatedAmount: Double? = nil, UpwardVariationTaxWithholdingAmount: Double? = nil, ApprovedWithholdingVariationPercentage: Double? = nil, HasHELPDebt: Bool? = nil, HasSFSSDebt: Bool? = nil, HasStudentStartupLoan: Bool? = nil, HasTradeSupportLoanDebt: Bool? = nil) {
-//            self.EmployeeID = EmployeeID
-//            self.EmploymentBasis = EmploymentBasis
-//            self.TaxFileNumber = TaxFileNumber
-//            self.TaxFreeThresholdClaimed = TaxFreeThresholdClaimed
-//            self.HasLoanOrStudentDebt = HasLoanOrStudentDebt
-//            self.UpdatedDateUTC = UpdatedDateUTC
-//            self.TFNExemptionType = TFNExemptionType
-//            self.ResidencyStatus = ResidencyStatus
-//            self.AustralianResidentForTaxPurposes = AustralianResidentForTaxPurposes
-//            self.EligibleToReceiveLeaveLoading = EligibleToReceiveLeaveLoading
-//            self.TaxOffsetEstimatedAmount = TaxOffsetEstimatedAmount
-//            self.UpwardVariationTaxWithholdingAmount = UpwardVariationTaxWithholdingAmount
-//            self.ApprovedWithholdingVariationPercentage = ApprovedWithholdingVariationPercentage
-//        }
         
         
         //--------------------------------------
