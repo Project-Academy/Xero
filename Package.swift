@@ -13,11 +13,11 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
+//        .library(
+//            name: "XeroModels",
+//            targets: ["Models"]),
         .library(
-            name: "XeroModels",
-            targets: ["Models"]),
-        .library(
-            name: "XeroAPI",
+            name: "Xero",
             targets: ["Models", "API"]),
     ],
     dependencies: [.Presto, .PKAppInfo, .PKPrefs],
