@@ -1,0 +1,33 @@
+{
+  "originHash" : "bc6d9b370e371a18c6b4fcdf5046939b1a066aa96428b5faa12893195e4d009d",
+  "pins" : [
+    {
+      "identity" : "pkappinfo",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Project-Academy/PKAppInfo",
+      "state" : {
+        "revision" : "c166916aa5d78849f7d62d058b52a07a4c064fb7",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "pkprefs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Project-Academy/PKPrefs",
+      "state" : {
+        "revision" : "63fc2e6486d10ae31b1e82c89dc010e4d1608b50",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "presto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Project-Academy/Presto",
+      "state" : {
+        "revision" : "9bd92991384df90f92625eab2316cc909d6979b7",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 3
+}
